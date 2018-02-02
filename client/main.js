@@ -18,7 +18,7 @@ const renderPlayers = (playersArray) => {
 }
 
 const submitPlayer = (e) => {
-    let playerName = event.target.playerName.value;
+    let playerName = e.target.playerName.value;
     e.preventDefault();
 
     if (playerName) {
@@ -42,7 +42,7 @@ Meteor.startup(()=>{
                 {renderPlayers(players)}
                 <form onSubmit={submitPlayer}>
                     <input type="text" name="playerName" placeholder="Player Name" />
-                    <button> Add Player </button>
+                    <button>Add Player</button>
                 </form>
             </div>
         );
