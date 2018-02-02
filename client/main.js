@@ -5,7 +5,6 @@ import { Tracker } from 'meteor/tracker';
 import { Players } from '../imports/api/players';
 
 Meteor.startup(()=>{
-    console.log("A client was started!");
     Tracker.autorun(()=>{
         let title = "-| Score Keep |-";
         let jsx = (
